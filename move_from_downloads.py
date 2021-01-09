@@ -26,42 +26,42 @@ class HandleDownloadFile(FileSystemEventHandler):
         for files in os.listdir(src_location):
             name,extension=os.path.splitext(files)
             if extension==".doc" or extension==".docx":
-                destination=dest_location+"/.docFolder"
+                destination=dest_location+"/docFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".exe":
-                destination=dest_location+"/.exeFolder"
+                destination=dest_location+"/exeFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".htm" or extension==".html":
-                destination=dest_location+"/.htmlFolder"
+                destination=dest_location+"/htmlFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".pdf":
-                destination=dest_location+"/.pdfFolder"
+                destination=dest_location+"/pdfFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".png":
-                destination=dest_location+"/.pngFolder"
+                destination=dest_location+"/pngFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".ppt" or extension==".pptx":
-                destination=dest_location+"/.pptFolder"
+                destination=dest_location+"/pptFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".txt":
-                destination=dest_location+"/.txtFolder"
+                destination=dest_location+"/txtFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
             if extension==".xls" or extension==".xlsx":
-                destination=dest_location+"/.xlsFolder"
+                destination=dest_location+"/xlsFolder"
                 src=src_location+"/"+files
                 shutil.move(src,destination)
                 continue
